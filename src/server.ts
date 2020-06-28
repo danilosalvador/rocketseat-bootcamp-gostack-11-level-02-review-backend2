@@ -1,9 +1,11 @@
 import express from 'express';
+import 'express-async-errors';
 import 'reflect-metadata';
 
 import './database';
 import logRequest from './middlewares/logRequest';
 import appError from './middlewares/appError';
+
 import routes from './routes';
 
 const app = express();
